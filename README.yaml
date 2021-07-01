@@ -5,7 +5,7 @@
 #
 
 # Name of this project
-name: terraform-example-module
+name: terraform-helm-release
 
 # Logo for this project
 #logo: docs/logo.png
@@ -17,16 +17,16 @@ license: "APACHE2"
 copyrights:
   - name: "Cloud Posse, LLC"
     url: "https://cloudposse.com"
-    year: "2020"
+    year: "2021"
 
 # Canonical GitHub repo
-github_repo: cloudposse/terraform-example-module
+github_repo: cloudposse/terraform-helm-release
 
 # Badges to display
 badges:
   - name: "Latest Release"
-    image: "https://img.shields.io/github/release/cloudposse/terraform-example-module.svg"
-    url: "https://github.com/cloudposse/terraform-example-module/releases/latest"
+    image: "https://img.shields.io/github/release/cloudposse/terraform-helm-release.svg"
+    url: "https://github.com/cloudposse/terraform-helm-release/releases/latest"
   - name: "Slack Community"
     image: "https://slack.cloudposse.com/badge.svg"
     url: "https://slack.cloudposse.com"
@@ -57,8 +57,7 @@ references:
 
 # Short description of this project
 description: |-
-  This is `terraform-example-module` project provides all the scaffolding for a typical well-built Cloud Posse module. It's a template repository you can
-  use when creating new repositories.
+  This is `terraform-helm-release` project which wraps the `helm_release` resource.
 
 # Introduction to the project
 #introduction: |-
@@ -73,7 +72,7 @@ usage: |-
 
   ```hcl
   module "example" {
-    source = "https://github.com/cloudposse/terraform-example-module.git?ref=master"
+    source  = "https://github.com/cloudposse/terraform-helm-release.git?ref=master"
     example = "Hello world!"
   }
   ```
@@ -96,3 +95,5 @@ include:
 contributors:
   - name: "Erik Osterman"
     github: "osterman"
+  - name: "RB"
+    github: "nitrocode"

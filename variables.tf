@@ -71,7 +71,7 @@ variable "verify" {
 
 variable "keyring" {
   type        = string
-  description = "Location of public keys used for verification. Used only if `verify` is true. Defaults to `/.gnupg/pubring.gpg` in the location set by `home`"
+  description = "Location of public keys used for verification. Used only if `verify` is true. Defaults to `/.gnupg/pubring.gpg` in the location set by `home`."
   default     = null
 }
 

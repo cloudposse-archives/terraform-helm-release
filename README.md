@@ -28,7 +28,7 @@
 
 -->
 
-This is `terraform-helm-release` project which wraps the `helm_release` resource.
+Terraform module to provision [helm_release](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release) resources.
 
 ---
 
@@ -99,7 +99,7 @@ For automated tests of the complete example using [bats](https://github.com/bats
 (which tests and deploys the example on AWS), see [test](test).
 
 ```hcl
-module "example" {
+module "helm_release" {
   source  = "https://github.com/cloudposse/terraform-helm-release.git?ref=master"
   example = "Hello world!"
 }

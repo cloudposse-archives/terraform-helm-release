@@ -107,7 +107,7 @@ variable "force_update" {
 
 variable "recreate_pods" {
   type        = bool
-  description = " Perform pods restart during upgrade/rollback. Defaults to `false`."
+  description = "Perform pods restart during upgrade/rollback. Defaults to `false`."
   default     = null
 }
 

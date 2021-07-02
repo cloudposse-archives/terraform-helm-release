@@ -17,13 +17,13 @@ variable "repository" {
 
 variable "repository_key_file" {
   type        = string
-  description = "The repositories cert key file"
+  description = "The repositories cert key file."
   default     = null
 }
 
 variable "repository_cert_file" {
   type        = string
-  description = "The repositories cert file"
+  description = "The repositories cert file."
   default     = null
 }
 

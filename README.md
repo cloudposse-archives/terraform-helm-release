@@ -101,7 +101,21 @@ For automated tests of the complete example using [bats](https://github.com/bats
 ```hcl
 module "helm_release" {
   source  = "https://github.com/cloudposse/terraform-helm-release.git?ref=master"
-  example = "Hello world!"
+  
+  chart      = "https://charts.helm.sh/incubator"
+  repository = "raw"
+  
+  kubernetes_namespace = "echo"
+  create_namespace     = true
+  
+  atomic          = true
+  cleanup_on_fail = true
+  timeout         = 300
+  wait            = true
+  
+  # these values will be deep merged
+  # values = [
+  # ]
 }
 ```
 

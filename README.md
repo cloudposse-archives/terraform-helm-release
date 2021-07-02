@@ -128,7 +128,7 @@ module "helm_release" {
 ## Examples
 
 Here is an example of using this module:
-- [`examples/complete`](https://github.com/cloudposse/terraform-example-module/) - complete example of using this module
+- [`examples/complete`](https://github.com/cloudposse/terraform-helm-release/) - complete example of using this module
 
 
 

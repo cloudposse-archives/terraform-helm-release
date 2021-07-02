@@ -57,7 +57,7 @@ references:
 
 # Short description of this project
 description: |-
-  This is `terraform-helm-release` project which wraps the `helm_release` resource.
+  Terraform module to provision [helm_release](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release) resources.
 
 # Introduction to the project
 #introduction: |-

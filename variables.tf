@@ -29,7 +29,7 @@ variable "repository_cert_file" {
 
 variable "repository_ca_file" {
   type        = string
-  description = "The Repositories CA File."
+  description = "The Repositories CA file."
   default     = null
 }
 

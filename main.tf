@@ -60,7 +60,7 @@ resource "helm_release" "this" {
     content {
       name  = set_sensitive.value["name"]
       value = set_sensitive.value["value"]
-      type  = set.value["type"]
+      type  = set_sensitive.value["type"]
     }
   }
 

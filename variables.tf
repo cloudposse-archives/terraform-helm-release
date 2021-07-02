@@ -77,7 +77,7 @@ variable "keyring" {
 
 variable "timeout" {
   type        = number
-  description = "Time in seconds to wait for any individual kubernetes operation (like Jobs for hooks). Defaults to `300` seconds"
+  description = "Time in seconds to wait for any individual kubernetes operation (like Jobs for hooks). Defaults to `300` seconds."
   default     = null
 }
 

@@ -72,10 +72,13 @@ usage: |-
 
   ```hcl
   module "helm_release" {
-    source  = "https://github.com/cloudposse/terraform-helm-release.git?ref=master"
-    
-    chart      = "https://charts.helm.sh/incubator"
-    repository = "raw"
+    source  = "cloudposse/release/helm"
+    # Cloud Posse recommends pinning every module to a specific version
+    # version = "x.x.x"
+
+    repository    = "https://charts.helm.sh/incubator"
+    chart         = "raw"
+    chart_version = "0.2.5"
     
     kubernetes_namespace = "echo"
     create_namespace     = true

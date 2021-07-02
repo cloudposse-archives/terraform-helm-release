@@ -1,6 +1,6 @@
 variable "description" {
   type        = string
-  description = "Set release description attribute (visible in the history)."
+  description = "Release description attribute (visible in the history)."
   default     = null
 }
 
